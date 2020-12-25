@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977de96e-f9be-4d29-b290-ecb5a7515716" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608907209629</updated>
-      <workItem from="1608907235640" duration="1712000" />
+      <workItem from="1608907235640" duration="6626000" />
     </task>
     <task id="LOCAL-00001" summary="project creation">
       <created>1608907342952</created>
@@ -68,7 +68,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608909586485</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create base of server with zeromq library">
+      <created>1608909642968</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608909642968</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create base of client side with zeromq library">
+      <created>1608909717731</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608909717731</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,13 +92,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="project creation" />
     <MESSAGE value="add requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="add requirements.txt" />
+    <MESSAGE value="create base of server with zeromq library" />
+    <MESSAGE value="create base of client side with zeromq library" />
+    <option name="LAST_COMMIT_MESSAGE" value="create base of client side with zeromq library" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1608909641823">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1608909716654">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1608909641823" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1608909716654" />
     <state x="120" y="58" key="DiffContextDialog" timestamp="1608909611164">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
