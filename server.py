@@ -2,7 +2,7 @@ import json
 import os
 
 import zmq
-
+import subprocess
 # ZeroMQ Context
 context = zmq.Context()
 
@@ -13,10 +13,19 @@ sock.bind("tcp://127.0.0.1:5678")
 # Run a simple "Echo" server
 while True:
     message = sock.recv_json()
-    dic_mess = json.loads(message)
-    if dic_mess['command_type'] == 'os':
-        command = '{} {}'.format(dic_mess['command_name'], dic_mess['parameters'][0])
+    if message['command_type'] == 'os':
+        command = '{} {}'.format(message['command_name'], message['parameters'][0])
         print("the command is {}".format(command))
-        result = os.system(command)  # TODo: create the os command convert to a function
-    sock.send_json({'result': result})
-    print(result)
+        proc = subprocess.Popen([message['command_name'], message['parameters'][0]], stdout=subprocess.PIPE, shell=True)
+        (out, err) = proc.communicate()
+        print("the outut is {}".format(out))
+        print(type(out))
+        # result = os.system(command)  # TODo: create the os command convert to a function
+    sock.send_json({'result': out.decode('utf-8')})
+    # print(result)
+
+
+
+
+
+# print "program output:", out
